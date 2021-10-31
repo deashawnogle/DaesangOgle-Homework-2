@@ -50,4 +50,37 @@ header nav ul li {
 
   .section1 {
     justify-content: center;
+    display: flex;
+  } 
+    .daesang {
+      width: 170px;
+      height: 180px;
+      border-radius: 50%;
+      padding: 20px 20px 20px 20px;
+    }
+    
+    .section1 p {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+
+  .section2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
+  .section2 a {
+    margin-top: 60px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .project1 {
+    background-image: url("./images/project1.png");
+    min-height: 300px;
+    min-width: 500px;
+    background-size: cover;
+    
+  }
+  
+  .project2
