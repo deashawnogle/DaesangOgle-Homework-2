@@ -2,7 +2,7 @@
 
 Simple introuduce myself (Daesang Ogle)
 
-List working experience
+List working experience 
 List Contact information
     -Phone #
     -Email 
