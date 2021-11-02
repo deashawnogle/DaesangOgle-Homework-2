@@ -83,36 +83,74 @@ aside {
     font-size: 20px;
     display: flex;
   }
+    .overlay1 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgb(137, 148, 149);
+    }
 
-  .project1 {
-    background-image: url("./images/project1.png");
-    min-height: 300px;
-    min-width: 500px;
-    background-size: cover;
-    margin: 50px 50px 50px 50px;
-  }
+    .text1 {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 
-  .project2 {
-    background-image: url("./images/homework1.png");
-    min-height: 300px;
-    min-width: 500px;
-    background-size: cover;
-    margin: 50px 50px 50px 50px;
-  }
+    .project1 {
+      width: 400px; height: 200px;
+      object-fit: cover;
+      background-size: contain;
+      padding: 0;
+      margin: 50px 50px 50px 50px;
+      background: no-repeat;
+    }
 
-  .project3 {
-    background-image: url("./images/Homework3.png");
-    min-height: 300px;
-    min-width: 500px;
-    background-size: cover;
-    margin: 50px 50px 50px 50px;
-  }
+      .project1:hover .overlay {
+        opacity: 1;
+      }
+
+    .project2 {
+      width: 400px; height: 200px;
+      object-fit: cover;
+      padding: 0;
+      margin: 50px 50px 50px 50px;
+      background: no-repeat;
+    }
+
+    .project3 {
+      width: 400px; height: 200px;
+      object-fit: cover;
+      padding: 0;
+      margin: 50px 50px 50px 50px;
+      background: no-repeat;
+    }
+
+    .project4 {
+      width: 400px; height: 200px;
+      object-fit: cover;
+      padding: 0;
+      margin: 50px 50px 50px 50px;
+      background: no-repeat;
+    }
+
 footer {
   font-weight: bolder;
   display: flex;
   padding: 20px;
   text-align: left;
-  background: rgb(221, 121, 121);
+  background: rgb(248, 177, 177);
 }
 
 @media screen and (max-width: 992px) {
