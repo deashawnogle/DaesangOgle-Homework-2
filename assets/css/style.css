@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -12,13 +11,13 @@ html {
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lucida Sans', Arial, sans-serif;
   margin: 0;
 }
 
 header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans', Arial, sans-serif;
   background-color: skyblue;
   color: black;
   display: flex;
@@ -26,7 +25,7 @@ header {
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 header nav {
@@ -36,11 +35,17 @@ header nav {
 
 header nav ul li {
   font-size: 20px;
-  float: right;
-  margin-inline-start: 20px;
+  float: left;
+  margin-inline-start: 10px;
   margin-top: 10%;
   list-style-type: none;
-  nav-right: auto;
+}
+
+aside {
+  flex: 30%;
+  background-color: #e0f3d0;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .content  {
@@ -61,14 +66,18 @@ header nav ul li {
     
     .section1 p {
       margin-top: 30px;
+      margin-bottom: 100px;
       font-size: 20px;
     }
 
   .section2 {
+    font-style: italic;
+    font-weight: bold;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
+
   .section2 a {
     margin-top: 60px;
     font-size: 20px;
@@ -80,7 +89,37 @@ header nav ul li {
     min-height: 300px;
     min-width: 500px;
     background-size: cover;
-    
+    margin: 50px 50px 50px 50px;
   }
-  
-  .project2
+
+  .project2 {
+    background-image: url("./images/homework1.png");
+    min-height: 300px;
+    min-width: 500px;
+    background-size: cover;
+    margin: 50px 50px 50px 50px;
+  }
+
+  .project3 {
+    background-image: url("./images/Homework3.png");
+    min-height: 300px;
+    min-width: 500px;
+    background-size: cover;
+    margin: 50px 50px 50px 50px;
+  }
+footer {
+  font-weight: bolder;
+  display: flex;
+  padding: 20px;
+  text-align: left;
+  background: rgb(221, 121, 121);
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
