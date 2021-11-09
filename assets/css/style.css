@@ -1,40 +1,43 @@
 * {
   padding: 0;
   margin: 0;
-}
-html {
-  background: url("./images/Background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Lucida Sans', Arial, sans-serif;
-  margin: 0;
+  color: #58666e;
+  background-color: #f0f3f4;
 }
 
 header {
+  width: 100%;
+  height: 130px;
+  z-index: 2000;
+  box-shadow: 0 4px 4px rgb(139, 139, 236), 0 10px 0 rgba(0, 0, 0, 0.26);
   padding: 20px;
   font-family: 'Lucida Sans', Arial, sans-serif;
   background-color: skyblue;
   color: black;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 header nav {
-  display: inline;
-  margin-left: 25px;
+  display: inline-block;
+  height: 15px;
+  margin: 12px 0 12px 25px;
 }
 
 header nav ul li {
-  font-size: 20px;
+  line-height: 30px;
+  padding: 0 30px;
+  font-size: 30px;
   float: left;
   margin-inline-start: 10px;
   margin-top: 10%;
@@ -42,15 +45,24 @@ header nav ul li {
 }
 
 aside {
-  flex: 30%;
+  float: left;
+  width: 150px;
+  min-height: 250px;
   background-color: #e0f3d0;
   padding: 20px;
   flex-wrap: wrap;
+  height: max-content;
 }
 
 .content  {
+  margin-left: -150px;
   display: flex;
   flex-direction: column;
+  background: url("./images/Background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
   .section1 {
@@ -83,8 +95,32 @@ aside {
     font-size: 20px;
     display: flex;
   }
-    .overlay1 {
-      position: absolute;
+
+  .section2Div {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    /* border: 10px black;
+    background: rgb(245, 240, 238);
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    position: relative */
+  }
+  
+  .hoverimage {
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+    /* object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 300px; */
+  }
+    /* .overlay {
       top: 0;
       bottom: 0;
       left: 0;
@@ -96,7 +132,7 @@ aside {
       background-color: rgb(137, 148, 149);
     }
 
-    .text1 {
+    .text {
       color: white;
       font-size: 20px;
       position: absolute;
@@ -107,51 +143,54 @@ aside {
       transform: translate(-50%, -50%);
       text-align: center;
     }
-
-    .project1 {
-      width: 400px; height: 200px;
-      object-fit: cover;
-      background-size: contain;
-      padding: 0;
-      margin: 50px 50px 50px 50px;
-      background: no-repeat;
+    .hoverimage {
+      display: block;
     }
-
-      .project1:hover .overlay {
-        opacity: 1;
-      }
-
-    .project2 {
-      width: 400px; height: 200px;
-      object-fit: cover;
-      padding: 0;
-      margin: 50px 50px 50px 50px;
-      background: no-repeat;
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: beige;
     }
-
-    .project3 {
-      width: 400px; height: 200px;
-      object-fit: cover;
-      padding: 0;
-      margin: 50px 50px 50px 50px;
-      background: no-repeat;
+    
+    #overlay3:hover .overlay {
+      opacity: 1;
     }
-
-    .project4 {
-      width: 400px; height: 200px;
-      object-fit: cover;
-      padding: 0;
-      margin: 50px 50px 50px 50px;
-      background: no-repeat;
+    
+    .text2 {
+      color: brown;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
     }
+      
+      
+      /* #project1Image, #project2Image, #project3Image, #project4Image {
+        border: 5px skyblue;
+      }  */
+
 
 footer {
+  margin-bottom: 0px;
   font-weight: bolder;
   display: flex;
   padding: 20px;
   text-align: left;
   background: rgb(248, 177, 177);
-}
+} 
+
+*/
 
 @media screen and (max-width: 992px) {
 }
