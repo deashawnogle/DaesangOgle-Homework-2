@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+* body {
+    background-color: rgb(162, 206, 233);
+    color: black;
+    text-shadow: grey 0.2em 0.2em 0.2em;
+}

@@ -6,8 +6,11 @@
 
 body {
   font-family: 'Lucida Sans', Arial, sans-serif;
-  color: #58666e;
-  background-color: #f0f3f4;
+  background: url("./images/Background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
@@ -29,40 +32,47 @@ header h1 {
 }
 
 header nav {
-  display: inline-block;
-  height: 15px;
-  margin: 12px 0 12px 25px;
+  float: right;
 }
 
-header nav ul li {
-  line-height: 30px;
+/* header nav ul li {
+  display: inline-block;
   padding: 0 30px;
   font-size: 30px;
-  float: left;
-  margin-inline-start: 10px;
-  margin-top: 10%;
-  list-style-type: none;
+  line-height: 100px;
+}
+
+header nav ul li :hover {
+  color: grey;
+}
+
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 aside {
-  float: left;
-  width: 150px;
-  min-height: 250px;
+  width: 15%;
   background-color: #e0f3d0;
-  padding: 20px;
-  flex-wrap: wrap;
-  height: max-content;
+  position: fixed;
+  top: 130px;
+  bottom: 0;
+  width: 150px;
+  padding-top: 40px;
 }
-
-.content  {
-  margin-left: -150px;
-  display: flex;
-  flex-direction: column;
-  background: url("./images/Background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  aside ul {
+    width: 150px;
+  }
+    aside ul li {
+      display: block;
+      color: brown;
+      padding: 8px 0 8px 16px;
+    }
+section  {
+  margin-top: 130px;
+  float: right;
+  margin-left: 130px;
 }
 
   .section1 {
@@ -88,38 +98,31 @@ aside {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
-  .section2 a {
+  /* .section2 a {
     margin-top: 60px;
     font-size: 20px;
     display: flex;
-  }
+  } */
 
-  .section2Div {
-    width: 300px;
-    height: 300px;
+  /* .section2Div {
+    max-width: 300px;
+    max-height: 300px;
     margin: 30px;
-    /* border: 10px black;
-    background: rgb(245, 240, 238);
-    height: 300px;
-    width: 300px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 10px;
-    position: relative */
-  }
+    object-fit: cover;
   
-  .hoverimage {
-    width: 100%;
+  } */
+  
+  /* .hoverimage {
+    width: 300px;
     height: 150px;
-    object-fit: scale-down;
+    object-fit: scale-down; */
     /* object-fit: cover;
     display: block;
     height: 300px;
     width: 300px; */
-  }
+  /* } */
     /* .overlay {
       top: 0;
       bottom: 0;
@@ -182,6 +185,8 @@ aside {
 
 
 footer {
+  position: fixed;
+  width: 100%;
   margin-bottom: 0px;
   font-weight: bolder;
   display: flex;
@@ -190,13 +195,4 @@ footer {
   background: rgb(248, 177, 177);
 } 
 
-*/
 
-@media screen and (max-width: 992px) {
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-}
