@@ -13,9 +13,9 @@ h1 {
   font-size: 50px;
 }
 
-.header_area .main-menu .navbar .navbar-brand {
+/* .header_area .main-menu .navbar .navbar-brand {
   padding: 1rem 1rem 5rem 2.5rem;
-}
+} */
 
 .header_area .main-menu .navbar {
   padding: 0rem 5rem;
@@ -32,9 +32,9 @@ h1 {
 
 /*  Main */
 
-.site-main .site-banner {
-  background: url(./images/Background.jpg) no-repeat 0% 50%;
-}
+/* .site-main .site-banner {
+  background: url(./images/Background.jpg) no-repeat 0% 50%; 3*/
+
 
 .site-main .site-banner .site-title h2 {
   padding-top: 10%;
