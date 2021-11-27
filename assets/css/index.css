@@ -14,12 +14,9 @@ body {
   padding: 0;
 }
 
-.bg-light {
-  background-color: rgb(196, 236, 252);
-}
-
 .nav-link, .navbar-brand {
   font-size: 20pt;
+  padding: 0;
 }
 
 .container {
